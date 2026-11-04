@@ -1,0 +1,13 @@
+MediaPipe BlazePose GHUM Lite pose model
+
+Upstream: Google MediaPipe
+https://developers.google.com/edge/mediapipe/solutions/vision/pose_landmarker
+
+The official BlazePose GHUM 3D model card identifies the model authors as
+Valentin Bazarevsky, Ivan Grishchenko and Eduard Gabriel Bazavan, Google,
+and specifies Apache License, Version 2.0. See the adjacent LICENSE and
+README.md for the source, pinned download URL and verified SHA-256.
+
+This is a PulseAI-authored third-party attribution record, not a NOTICE
+file supplied inside the upstream model bundle and not a separate licence
+grant. The bundled model bytes have not been modified by this release work.

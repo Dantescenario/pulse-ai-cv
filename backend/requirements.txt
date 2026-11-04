@@ -1,0 +1,11 @@
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+python-multipart>=0.0.9
+requests>=2.31.0
+python-dotenv>=1.0.1
+# Keep the pre-1.x Tasks runtime: the 1.x native allocator aborts in restricted builders.
+mediapipe==0.10.21
+# MediaPipe already requires contrib; install only one package providing cv2.
+opencv-contrib-python==4.11.0.86
+numpy>=1.26.4,<2

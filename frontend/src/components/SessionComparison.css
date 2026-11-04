@@ -1,0 +1,8 @@
+.session-comparison label { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin: 1rem 0; }
+.session-comparison select { max-width: 100%; background: #0f172a; color: #e2e8f0; padding: 0.6rem; border-radius: 6px; border: 1px solid #64748b; }
+.session-comparison p { line-height: 1.6; margin-top: 0.75rem; }
+.comparison-table-wrap { overflow-x: auto; margin-top: 1rem; }
+.session-comparison table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; }
+.session-comparison caption { text-align: left; color: #94a3b8; margin-bottom: 0.5rem; }
+.session-comparison th, .session-comparison td { padding: 0.8rem; border-bottom: 1px solid #334155; }
+.session-comparison small { display: block; color: #94a3b8; margin-top: 0.2rem; }

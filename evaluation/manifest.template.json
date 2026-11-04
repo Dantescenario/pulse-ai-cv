@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "dataset_name": "UNANNOTATED TEMPLATE",
+  "samples": [
+    {
+      "video_id": "replace_with_pseudonymous_id",
+      "video_path": null,
+      "exercise": null,
+      "ground_truth_reps": null,
+      "repetitions": [],
+      "timestamps_complete": false,
+      "camera_view": "unknown",
+      "quality_notes": "",
+      "tracking_difficulties": [],
+      "annotation_source": "UNANNOTATED TEMPLATE ? replace with actual annotation provenance"
+    }
+  ]
+}

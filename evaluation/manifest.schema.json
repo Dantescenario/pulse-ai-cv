@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PulseAI CV annotation manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dataset_name",
+    "samples"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "dataset_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "samples": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/sample"
+      }
+    }
+  },
+  "$defs": {
+    "sample": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "video_id",
+        "video_path",
+        "exercise",
+        "ground_truth_reps",
+        "repetitions",
+        "timestamps_complete",
+        "camera_view",
+        "quality_notes",
+        "tracking_difficulties",
+        "annotation_source"
+      ],
+      "properties": {
+        "video_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,100}$"
+        },
+        "video_path": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Relative forward-slash path under video root; no absolute paths, .., colon or backslash. Null for metadata-only records."
+        },
+        "exercise": {
+          "enum": [
+            "squats",
+            "pushups",
+            "pullups",
+            "curls",
+            "lateral_raises",
+            "lunges",
+            null
+          ]
+        },
+        "ground_truth_reps": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "repetitions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/interval"
+          }
+        },
+        "timestamps_complete": {
+          "type": "boolean"
+        },
+        "camera_view": {
+          "enum": [
+            "front",
+            "side",
+            "rear",
+            "oblique",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "quality_notes": {
+          "type": "string"
+        },
+        "tracking_difficulties": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "annotation_source": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "interval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start_seconds",
+        "end_seconds"
+      ],
+      "properties": {
+        "start_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "end_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    }
+  },
+  "$comment": "The runner also enforces unique IDs/JSON keys, finite ordered non-overlapping intervals, count/timestamp consistency and safe resolved paths."
+}

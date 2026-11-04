@@ -1,0 +1,3 @@
+# Preserve known whitespace in unchanged upstream MediaPipe files.
+frontend/public/mediapipe/pose/README.md whitespace=-blank-at-eof
+frontend/public/mediapipe/pose/pose_solution_packed_assets_loader.js whitespace=-blank-at-eol

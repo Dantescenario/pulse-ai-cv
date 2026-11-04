@@ -1,0 +1,67 @@
+# Local environments and private/local application data
+backend/.venv/
+**/__pycache__/
+*.pyc
+backend/.env
+backend/*.db
+data/bodym/**
+frontend/node_modules/
+frontend/dist/
+*.log
+
+# Downloaded food-classifier weights (installed by training/install_food_model.py)
+backend/models/food101/
+
+
+# Offline evaluation: private videos, local manifests and generated reports
+/evaluation/videos/*
+!/evaluation/videos/.gitkeep
+/evaluation/local/
+/evaluation/results/
+
+# Local credentials, alternate environments and generated artifacts
+**/.env
+**/.env.*
+!**/.env.example
+**/.venv*/
+**/venv/
+**/node_modules/
+**/dist/
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+*.pem
+*.key
+.aws/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage/
+htmlcov/
+
+# Local datasets and model downloads. Existing tracked assets remain tracked.
+/data/**
+/backend/models/
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.tflite
+*.task
+
+# Archived local-only body-composition research; not part of the portfolio app.
+/.local-research/
+
+# Original pull-up recordings retained locally; do not redistribute in Git.
+/data/excercise/pull up/13894900_2160_3840_30fps.mp4
+/data/excercise/pull up/15859716-uhd_3840_2160_30fps.mp4
+
+# Derived recorded landmarks retained locally pending source-rights review.
+/backend/tests/rear_pullup_landmarks.json
+
+# Excluded legacy nutrition datasets and unverified recorded fixture.
+/FoodData_Central*json
+/backend/data/usda_online.json
+/backend/data/indian_foods.json
+/backend/tests/pullup_sample_landmarks.json

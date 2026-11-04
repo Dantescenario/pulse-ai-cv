@@ -1,0 +1,21 @@
+**/node_modules
+**/.venv
+**/__pycache__
+**/.env
+**/*.db
+**/*.log
+frontend/dist
+data
+.git
+
+# Never send local evaluation media or annotations to a container builder
+/evaluation
+/.local-research
+/backend/models/bodym_waist*.json
+/backend/tests/rear_pullup_landmarks.json
+
+# Excluded legacy nutrition datasets and unverified recorded fixture.
+/FoodData_Central*json
+/backend/data/usda_online.json
+/backend/data/indian_foods.json
+/backend/tests/pullup_sample_landmarks.json

@@ -1,0 +1,98 @@
+{
+  "pullups": {
+    "left": [
+      11,
+      13,
+      15
+    ],
+    "right": [
+      12,
+      14,
+      16
+    ],
+    "base": 130,
+    "peak": 85,
+    "increasing": false,
+    "min_range": 45
+  },
+  "curls": {
+    "left": [
+      11,
+      13,
+      15
+    ],
+    "right": [
+      12,
+      14,
+      16
+    ],
+    "base": 150,
+    "peak": 65,
+    "increasing": false,
+    "min_range": 75
+  },
+  "pushups": {
+    "left": [
+      11,
+      13,
+      15
+    ],
+    "right": [
+      12,
+      14,
+      16
+    ],
+    "base": 150,
+    "peak": 100,
+    "increasing": false,
+    "min_range": 45
+  },
+  "squats": {
+    "left": [
+      23,
+      25,
+      27
+    ],
+    "right": [
+      24,
+      26,
+      28
+    ],
+    "base": 155,
+    "peak": 105,
+    "increasing": false,
+    "min_range": 45
+  },
+  "lunges": {
+    "left": [
+      23,
+      25,
+      27
+    ],
+    "right": [
+      24,
+      26,
+      28
+    ],
+    "base": 155,
+    "peak": 105,
+    "increasing": false,
+    "min_range": 45
+  },
+  "lateral_raises": {
+    "left": [
+      23,
+      11,
+      13
+    ],
+    "right": [
+      24,
+      12,
+      14
+    ],
+    "base": 25,
+    "peak": 75,
+    "increasing": true,
+    "min_range": 45
+  }
+}

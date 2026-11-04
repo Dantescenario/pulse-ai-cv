@@ -1,0 +1,10 @@
+.rep-review h3 { margin-bottom: 0.6rem; }
+.rep-review-note { color: #94a3b8; font-size: 0.8rem; line-height: 1.5; margin: 0.6rem 0; }
+.rep-review-item { border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; padding: 0.65rem; margin-top: 0.5rem; font-size: 0.82rem; line-height: 1.5; }
+.rep-review-item summary { cursor: pointer; color: #a7f3d0; }
+.rep-review-item summary:focus-visible { outline: 2px solid #38bdf8; outline-offset: 4px; }
+.rep-review-item p, .rep-review-item ul { margin-top: 0.6rem; }
+.rep-review-item ul { padding-left: 1.2rem; }
+.rep-review-metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; margin: 0.8rem 0; }
+.rep-review-metrics dt { color: #94a3b8; }
+.rep-review-metrics dd { margin: 0; color: #e2e8f0; }

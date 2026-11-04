@@ -1,0 +1,22 @@
+﻿.muscle-anatomy h3 { margin: .4rem 0 .8rem; font-size: 1rem; }
+.anatomy-legend { display: flex; flex-wrap: wrap; gap: 12px; color: #9eafaa; font-size: .7rem; }
+.anatomy-legend span::before { content: ''; display: inline-block; width: 8px; height: 8px; margin-right: 5px; border-radius: 50%; background: #344842; }
+.anatomy-legend .primary::before { background: #33d6aa; }
+.anatomy-legend .supporting::before { background: #e9b86d; }
+.anatomy-figures { display: flex; gap: 12px; margin: 1rem 0; background: radial-gradient(ellipse at center, #18362e, #0b1714); border: 1px solid #29483f; border-radius: 14px; padding: 12px; }
+.anatomy-figures figure { flex: 1; min-width: 0; margin: 0; text-align: center; }
+.anatomy-figures svg { display: block; width: 100%; max-height: 320px; }
+.anatomy-figures figcaption { color: #a9c1b8; font-size: .7rem; margin-top: 8px; }
+.anatomy-body { fill: #182a25; stroke: #496258; stroke-width: 1; }
+.anatomy-muscle { fill: #30473e; stroke: #10251e; stroke-width: 1.2; transition: fill .2s; }
+.anatomy-muscle.primary { fill: #33d6aa; }
+.anatomy-muscle.supporting { fill: #e9b86d; }
+.anatomy-muscle:hover { stroke: white; stroke-width: 1.6; }
+.anatomy-detail { fill: none; stroke: #172b23; stroke-width: 1; opacity: .6; pointer-events: none; }
+.anatomy-muscle-list { margin: .65rem 0; font-size: .75rem; }
+.anatomy-muscle-list p, .anatomy-note, .anatomy-customize p { color: #a9beb6; font-size: .75rem; line-height: 1.6; margin: .3rem 0; }
+.anatomy-customize { margin-top: 1rem; border-top: 1px solid #30473e; padding-top: .8rem; font-size: .8rem; }
+.anatomy-customize summary { cursor: pointer; color: #65ddb8; }
+.anatomy-customize label { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; margin: .6rem 0; }
+.anatomy-customize select { max-width: 100%; background: #162b23; color: #edf6f3; border: 1px solid #496258; border-radius: 6px; padding: 6px; }
+.anatomy-source { font-size: .7rem; color: #65ddb8; }
