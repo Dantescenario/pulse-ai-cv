@@ -46,6 +46,9 @@ jobs:
         run: python -m pip check
       - name: Verify native CV imports
         run: python -c "import cv2, mediapipe, numpy; from mediapipe.tasks.python import vision"
+      - name: Smoke-test real PoseLandmarker inference
+        timeout-minutes: 2
+        run: python -B backend/smoke_pose_landmarker.py
       - name: Run complete backend test suite
         run: python -B -m unittest discover -s backend/tests -v
 
