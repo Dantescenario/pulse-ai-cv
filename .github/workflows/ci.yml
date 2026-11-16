@@ -22,7 +22,7 @@ jobs:
     env:
       HF_HUB_OFFLINE: '1'
       TRANSFORMERS_OFFLINE: '1'
-      DATABASE_PATH: ${{ runner.temp }}/pulseai-ci.db
+      DATABASE_PATH: ${{ github.workspace }}/pulseai-ci.db
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
