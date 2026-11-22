@@ -49,6 +49,9 @@ jobs:
       - name: Smoke-test real PoseLandmarker inference
         timeout-minutes: 2
         run: python -B backend/smoke_pose_landmarker.py
+      - name: Smoke-test positive human-pose detection
+        timeout-minutes: 2
+        run: python -B backend/smoke_pose_detection.py
       - name: Run complete backend test suite
         run: python -B -m unittest discover -s backend/tests -v
 
